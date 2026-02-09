@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Smart Placement Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+    <h1>📌 Smart Placement / Internship Tracker</h1>
+</header>
+
+<!-- ========== FORM ========== -->
+<section class="form-section">
+    <form id="appForm">
+
+        <input type="text" id="company" placeholder="Company Name" required />
+        <input type="text" id="role" placeholder="Role / Position" required />
+
+        <select id="stage">
+            <option>Applied</option>
+            <option>Online Assessment (OA)</option>
+            <option>Interview</option>
+            <option>Offer</option>
+            <option>Rejected</option>
+        </select>
+
+        <select id="result">
+            <option>Pending</option>
+            <option>Cleared</option>
+            <option>Rejected</option>
+        </select>
+
+        <input type="date" id="date" required />
+
+        <button type="submit">Add Application</button>
+    </form>
+</section>
+
+<!-- ========== LIST ========== -->
+<section>
+    <table>
+        <thead>
+            <tr>
+                <th>Company</th>
+                <th>Role</th>
+                <th>Stage</th>
+                <th>Result</th>
+                <th>Date</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+</section>
+
+<!-- ========== SUMMARY ========== -->
+<section class="summary">
+    <div>Total: <span id="total">0</span></div>
+    <div>Interviews: <span id="interviews">0</span></div>
+    <div>Offers: <span id="offers">0</span></div>
+    <div>Rejected: <span id="rejected">0</span></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
